@@ -10,7 +10,7 @@ name = list(data["NAME"])
 # print(len(lat), len(lon))
 
 # we can remove or leave in zoom_start and tiles
-map = folium.Map(location=[38.58, -99.09], zoom_start=6, tiles="Stamen Terrain")
+map = folium.Map(location=[38.58, -99.09], zoom_start=6, tiles="OpenStreetMap")
 
 # instead of throwing everythiing in our add_child method we can use a FeatureGroup method and use add_child within it
 fg = folium.FeatureGroup(name="Volcano and Population WebMap")
