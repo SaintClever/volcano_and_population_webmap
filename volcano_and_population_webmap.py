@@ -62,8 +62,8 @@ fgp.add_child(
 )
 
 
-map.add_child(fgv)
 map.add_child(fgp)
+map.add_child(fgv)
 
 '''MAP: LAYER SWITCH'''
 map.add_child(folium.LayerControl()) # Must come after the map.add_child(fgv) and map.add_child(fgp) because it needs to read in the fg aka the feature groups variables we created
